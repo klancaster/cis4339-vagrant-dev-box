@@ -1,24 +1,26 @@
 SpinUp Labs Vagrant Dev Box
 ===========================
 
-A basic vagrant dev environment for rails development.
+This is a basic development setup for Rails forked from Spinup Labs original work. It uses Puppet to provision the system.
 
-Provisioning with Puppet.
+To use this package, you must first
+- install Vagrant (vagrantup.com)
+- install VirtualBox (virtualbox.org)
 
-Installed Packages/Applications
+## Installed Packages/Applications
 
 Ruby Rails Specific
----
+###
 - rvm
 - ruby 2.0.0
 - bundler
 
 Git
----
+###
 - git
 
 Databases
----
+###
 - SQLite
 - MySQL
 - Postgres
