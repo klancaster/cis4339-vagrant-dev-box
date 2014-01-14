@@ -12,7 +12,7 @@ To use this package, you must first
 Ruby Rails Specific
 ###
 - rvm
-- ruby 2.0.0
+- ruby 2.1.0
 - bundler
 
 Git
