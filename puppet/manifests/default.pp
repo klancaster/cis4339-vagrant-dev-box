@@ -94,14 +94,14 @@ exec { 'install_rvm':
 }
 
 exec { 'install_ruby':
-  command => "${as_vagrant} '${home}/.rvm/bin/rvm install 2.0.0 --autolibs=enabled'",
+  command => "${as_vagrant} '${home}/.rvm/bin/rvm install 2.1.0 --autolibs=enabled'",
   creates => "${home}/.rvm/bin/ruby",
   timeout => 600,
   require => [ Package['libyaml-dev'], Exec['install_rvm'] ]
 }
 
 exec { 'set_default_ruby': 
-  command => "${as_vagrant} '${home}/.rvm/bin/rvm --fuzzy alias create default 2.0.0 && ${home}/.rvm/bin/rvm use default'",
+  command => "${as_vagrant} '${home}/.rvm/bin/rvm --fuzzy alias create default 2.1.0 && ${home}/.rvm/bin/rvm use default'",
   require => Exec['install_ruby']
 }
 
