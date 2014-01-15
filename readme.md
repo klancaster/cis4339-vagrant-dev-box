@@ -1,4 +1,4 @@
-SpinUp Labs Vagrant Dev Box
+CIS 4339 Vagrant Dev Box
 ===========================
 
 This is a basic development setup for Rails forked from Spinup Labs original work. It uses Puppet to provision the system.
